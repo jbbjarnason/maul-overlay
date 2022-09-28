@@ -20,3 +20,5 @@ jobs:
         path: ./dist
         retention-days: 1
     - uses: actions/deploy-pages@v1
+      permissions:
+        packages: write
