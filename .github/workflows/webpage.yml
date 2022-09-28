@@ -3,7 +3,7 @@ name: Build web page
 on: [push, pull_request]
 
 jobs:
-  build:
+  build_deploy:
     runs-on: ubuntu-22.04
 
     steps:
@@ -19,3 +19,4 @@ jobs:
       with:
         path: ./dist
         retention-days: 1
+    - uses: actions/deploy-pages@v1
