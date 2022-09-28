@@ -15,3 +15,7 @@ jobs:
       run: npm install
     - name: Build page
       run: npm run build
+    - uses: actions/upload-pages-artifact@v0
+      with:
+        path: ./dist
+        retention-days: 1
